@@ -1,0 +1,29 @@
+{
+  "name": "trit-shift",
+  "description": "trit shifting operations",
+  "version": "0.0.1",
+  "main": "shift.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:/trit-shift.git"
+  },
+  "keywords": [
+    "ternary",
+    "base3",
+    "trits",
+    "math",
+    "trits",
+    "operation",
+    "shift"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "pad": "^0.1.0"
+    "balanced-ternary": "*",
+    "tape": "^4.0.0"
+  }
+}
