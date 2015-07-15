@@ -1,7 +1,7 @@
 'use strict';
 
 function shift_left(input, carryIn) {
-  return input * 3 + (carryIn !== undefined ? carryIn : 0);
+  return input * 3 + carryIn;
 }
 
 module.exports = {
