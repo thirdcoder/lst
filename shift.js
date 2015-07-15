@@ -1,9 +1,9 @@
 'use strict';
 
-function shift_left(input, carryIn) {
+function shl(input, carryIn) {
   return input * 3 + carryIn;
 }
 
 module.exports = {
-  shift_left: shift_left,
+  shl: shl,
 };
