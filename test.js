@@ -35,13 +35,29 @@ test('shift left repeated', function(t) {
 });
 
 test('shift right', function(t) {
-  t.equal(shr(bts2n('10')), bts2n('1'));
-  t.equal(shr(bts2n('100')), bts2n('10'));
-  t.equal(shr(bts2n('i0')), bts2n('i'));
-  t.equal(shr(bts2n('i00')), bts2n('i0'));
+  t.equal(shr(bts2n('10'), 5, 0), bts2n('1'));
+  t.equal(shr(bts2n('100'), 5, 0), bts2n('10'));
+  t.equal(shr(bts2n('i0'), 5, 0), bts2n('i'));
+  t.equal(shr(bts2n('i00'), 5, 0), bts2n('i0'));
 
-  t.equal(shr(bts2n('101')), bts2n('10'));
-  t.equal(shr(bts2n('i0i')), bts2n('i0'));
+  t.equal(shr(bts2n('101'), 5, 0), bts2n('10'));
+  t.equal(shr(bts2n('i0i'), 5, 0), bts2n('i0'));
+
+  t.end();
+});
+
+test('shift right in', function(t) {
+  t.equal(shr(0, 5, 1), bts2n('10000'));
+  t.equal(shr(0, 5,-1), bts2n('i0000'));
+  t.equal(shr(0, 5, 0), bts2n('00000'));
+
+  t.equal(shr(bts2n('iiiii'), 5, 1), bts2n('1iiii'));
+  t.equal(shr(bts2n('iiiii'), 5,-1), bts2n('iiiii'));
+  t.equal(shr(bts2n('iiiii'), 5, 0), bts2n('0iiii'));
+
+  t.equal(shr(bts2n('i0i0i'), 5, 1), bts2n('1i0i0'));
+  t.equal(shr(bts2n('11111'), 5,-1), bts2n('i1111'));
+  t.equal(shr(bts2n('10101'), 5, 0), bts2n('01010'));
 
   t.end();
 });
