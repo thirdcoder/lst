@@ -19,3 +19,17 @@ test('shift left carry', function(t) {
   t.end();
 });
 
+test('shift left repeated', function(t) {
+  var shl = shift_left;
+  t.equal(shl(shl(shl(bts2n('i01'), 0), 0), 0), bts2n('i01000'));
+  t.equal(shl(shl(shl(bts2n('i01'), 1), 1), 1), bts2n('i01111'));
+  t.equal(shl(shl(shl(bts2n('i01'),-1),-1),-1), bts2n('i01iii'));
+
+  t.equal(shl(shl(shl(bts2n('10i'), 0), 0), 0), bts2n('10i000'));
+  t.equal(shl(shl(shl(bts2n('10i'), 1), 1), 1), bts2n('10i111'));
+  t.equal(shl(shl(shl(bts2n('10i'),-1),-1),-1), bts2n('10iiii'));
+
+  t.equal(shl(shl(shl(bts2n('10i'),-1), 0), 1), bts2n('10ii01'));
+
+  t.end();
+});
