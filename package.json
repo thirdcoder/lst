@@ -1,11 +1,11 @@
 {
-  "name": "trit-shift",
-  "description": "trit shifting operations",
+  "name": "lst",
+  "description": "least significant trit",
   "version": "0.0.1",
-  "main": "shift.js",
+  "main": "lst.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:/trit-shift.git"
+    "url": "git@github.com:/lst.git"
   },
   "keywords": [
     "ternary",
@@ -13,7 +13,7 @@
     "trits",
     "math",
     "trits",
-    "operation",
+    "lst",
     "shift"
   ],
   "scripts": {
@@ -22,7 +22,6 @@
   "dependencies": {},
   "devDependencies": {
     "balanced-ternary": "*",
-    "pad": "^0.1.0",
     "tape": "^4.0.0"
   }
 }
