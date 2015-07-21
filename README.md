@@ -4,7 +4,7 @@ Get the "least significant trit" (LST) of a number
 
 Usage:
 
-    var lst = require('lst');
+    var lst = require('least-significant-trit');
 
     lst(3);     // 0
     lst(4);     // 1
