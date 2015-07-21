@@ -1,7 +1,7 @@
 {
   "name": "least-significant-trit",
   "description": "get least significant trit of a signed integer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lst.js",
   "repository": {
     "type": "git",
