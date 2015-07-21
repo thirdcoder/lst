@@ -5,7 +5,7 @@
   "main": "lst.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:/lst.git"
+    "url": "git@github.com:thirdcoder/lst.git"
   },
   "keywords": [
     "ternary",
@@ -21,7 +21,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "balanced-ternary": "*",
+    "balanced-ternary": "^1.0.0",
     "tape": "^4.0.0"
   }
 }
