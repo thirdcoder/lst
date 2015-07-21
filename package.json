@@ -1,5 +1,5 @@
 {
-  "name": "lst",
+  "name": "least-significant-trit",
   "description": "least significant trit",
   "version": "1.0.0",
   "main": "lst.js",
@@ -23,5 +23,6 @@
   "devDependencies": {
     "balanced-ternary": "^1.0.0",
     "tape": "^4.0.0"
-  }
+  },
+  "license": "MIT"
 }
