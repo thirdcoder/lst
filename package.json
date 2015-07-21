@@ -1,7 +1,7 @@
 {
   "name": "lst",
   "description": "least significant trit",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "lst.js",
   "repository": {
     "type": "git",
