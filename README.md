@@ -2,6 +2,9 @@
 
 Get the "least significant trit" (LST) of a number
 
+[![Build Status](https://travis-ci.org/thirdcoder/least-significant-trit.svg?branch=master)](https://travis-ci.org/thirdcoder/least-significant-trit)
+[![npm version](https://badge.fury.io/js/least-significant-trit.svg)](https://www.npmjs.com/package/least-significant-trit)
+
 Usage:
 
     var lst = require('least-significant-trit');
