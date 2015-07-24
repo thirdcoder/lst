@@ -1,8 +1,8 @@
-# lst
+# least-significant-trit
 
 Get the "least significant trit" (LST) of a number
 
-[![Build Status](https://travis-ci.org/thirdcoder/least-significant-trit.svg?branch=master)](https://travis-ci.org/thirdcoder/least-significant-trit)
+[![Build Status](https://travis-ci.org/thirdcoder/lst.svg?branch=master)](https://travis-ci.org/thirdcoder/lst)
 [![npm version](https://badge.fury.io/js/least-significant-trit.svg)](https://www.npmjs.com/package/least-significant-trit)
 
 Usage:
